@@ -80,7 +80,7 @@ public:
 			iter++;
 		}
 		if (curr && curr->next) {
-			if (curr->next.get() == list.tail) { // If deleting the tail node
+			if (curr->next.get() == list.tail) { 
 				list.tail = curr;
 			}
 			curr->next = std::move(curr->next->next);
